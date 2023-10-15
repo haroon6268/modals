@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.btn{
+    padding: 10px 20px 10px 20px;
+    font-size: large;
+    font-weight: bold;
+    border: solid 2px;
+    border-color: darkgray;
+    border-radius: 20px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transition: all;
+    transition: ease-out;
+    scale: 110%;
+    transition-duration: 300ms;
+}
+
+.modal{
+    position: relative;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 50px 20px 50px 20px;
+    border-radius: 10px;
+    line-height: 2rem;
+
+}
+
+.modalbox{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    
+}
+
+.closeBtn{
+    width: 5%;
+    margin-left: 95%;
+    position: absolute;
+    left: -10px;
+    top: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
